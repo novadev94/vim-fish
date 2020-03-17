@@ -163,6 +163,7 @@ endfunction
 
 function! fish#errorformat()
     return '%E%f (line %l):%m,%C%p^%.%#,%-C%.%#'
+    " return '%A<%t> fish: %m,%Efish: %m,%E%f (line %l): %m,%E%f (line %l):%.%#,%-Z%p^,%Ein %m,%Z	called on line %l of file %f,%Ein %m,%C%s,%-G%.%#'
 endfunction
 
 function! fish#Help(ref) abort
